@@ -5,7 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tea House | Trà hoa quả</title> 
+    <title>Tea House | Trà hoa quả</title>   
+    <!-- Link TinyMce --> 
+    <script src="https://cdn.tiny.cloud/1/t7lfci0vr2p6osdmr32k2iz3qdpczrskr1fizt0muc6tbozu/tinymce/6/tinymce.min.js"></script>
     <!-- Link Favicon -->
     <link rel="icon" type="image/x-icon" href="../imgs/favi.png">
     <!-- Link Bootrap -->
@@ -313,6 +315,45 @@
                     </div>
                 </div>
             </div>
+        </div> 
+        <div class="detail-describle"> 
+            <div class="container">
+                <h4 class="detail-describle__heading">Mô tả sản phẩm</h4>  
+                <div class="detail-describle__content">
+                    <p>
+                        Vải là một loại quả được nhiều người yêu thích không chỉ khi ăn quả hay khi chế biến thành món trà vải thơm ngon. Nhân
+                        lúc mùa vải đang rộ các bạn hãy thử tự làm cho mình những cốc trà vải thật ngon để thưởng thức trong hè nha.
+                    </p> 
+                    <p> 
+                        Nguyên liệu pha trà vải cho 3 người :
+                    </p> 
+                    <p> 
+                        -2 gói trà lipton túi lọc
+                        
+                        -300ml nước sôi
+                        
+                        -20g đường ( khoảng 2 thìa canh)
+                        
+                        -1 lon trái vải đóng hộp hoặc 10 quả vải.
+                        
+                        -1 chén đá lạnh
+                        
+                        -Nếu sử dụng vải đóng hộp, khi pha trà vải bạn cho thêm 3 thìa canh nươc vải đóng hộp vào bình trước khi lắc.
+                        
+                        -Đối với trà túi lọc bạn nên chọn loại có mùi nhẹ để không át đi mùi vải.
+                        
+                        -Bạn có thể tạo hương vị cho món trà vải bằng cách cho thêm 1 chút nước cốt chanh hoặc 1 thìa sữa đặc, giảm lượng đường
+                        đi nếu muốn.
+                    </p>
+                </div>
+            </div>
+        </div>  
+        <div class="deatail-comment">
+            <div class="container">
+                <h4 class="detail-comment__heading">Bình luận</h4> 
+                <textarea class="myWYSIWYG"></textarea>
+                <button>Thêm bình luận</button>
+            </div>
         </div>
     </section>
     <section id="footer">
@@ -435,7 +476,21 @@
     <!-- Link Main Script -->
     <script src="../script/main.js"></script>
     <script src="../script/owlcarousel.js"></script>
-    <script src="../script/mobile.js"></script>
+    <script src="../script/mobile.js"></script> 
+    <!-- WYSIWYG --> 
+        <script>
+            tinymce.init({
+                selector: '.myWYSIWYG',
+                plugins: 'anchor autolink charmap codesample emoticons image link lists media searchreplace table visualblocks wordcount checklist mediaembed casechange export formatpainter pageembed linkchecker a11ychecker tinymcespellchecker permanentpen powerpaste advtable advcode editimage tinycomments tableofcontents footnotes mergetags autocorrect',
+                toolbar: 'undo redo | blocks fontfamily fontsize | bold italic underline strikethrough | link image media table mergetags | addcomment showcomments | spellcheckdialog a11ycheck | align lineheight | checklist numlist bullist indent outdent | emoticons charmap | removeformat',
+                tinycomments_mode: 'embedded',
+                tinycomments_author: 'Author name',
+                mergetags_list: [
+                    { value: 'First.Name', title: 'First Name' },
+                    { value: 'Email', title: 'Email' },
+                ],
+            });
+        </script>
 </body>
 
 </html>
