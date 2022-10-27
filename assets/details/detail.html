@@ -283,13 +283,16 @@
                     <div class="col-lg-7"> 
                         <div class="detail-content">
                             <h3 class="detail-heading">TRÀ VẢI</h3> 
-                            <p class="detail-price">Giá: 40.000₫</p>  
+                            <div class="detail-price">  
+                                <p class="detail-price__label">Giá:</p> 
+                                <p class="detail-price__content">40.000₫</p>
+                            </div>  
                             <div class="detail-quantity">
                                 <p class="detail-quantity__label">Số lượng:</p>  
                                 <div class="detail-quantity__switch"> 
                                     <button class="increase-btn">+</button> 
                                     <p class="detail-quantity__number">0</p>
-                                    <button class="increase-btn">-</button>
+                                    <button class="decrease-btn">-</button>
                                 </div>
                             </div>
                             <div class="detail-content__button-list">
@@ -352,7 +355,7 @@
             <div class="container">
                 <h4 class="detail-comment__heading">Bình luận</h4> 
                 <textarea class="myWYSIWYG"></textarea>
-                <button>Thêm bình luận</button>
+                <button class="deatail-comment__btn">Thêm bình luận</button>
             </div>
         </div>
     </section>
