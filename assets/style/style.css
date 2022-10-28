@@ -800,9 +800,14 @@
 #detail .img-product__represent-wrap { 
     border-radius: 4px; 
     border: 1px solid #ddd; 
-} 
-#detail .detail-content{ 
+}  
+#detail .detail-infor { 
     padding: 0 80px;
+}
+#detail .detail-content{ 
+     
+    border-bottom: 2px solid #ddd; 
+    margin-bottom: 20px;
 }  
 #detail .detail-heading{
     font-size: 24px; 
@@ -857,7 +862,8 @@
 #detail .detail-content__button-list{  
     display: flex;
     justify-content: space-between; 
-    margin-bottom: 16px;
+    margin-bottom: 16px; 
+    padding-bottom: 16px;
 }
 #detail .detail-content__button{
     width: 48%; 
@@ -874,7 +880,8 @@
 #detail .detail-content__button i { 
     margin-right: 12px;
 }
-#detail .detail-content__button:hover { 
+#detail .detail-content__button:hover {  
+    color: #fff;
     background-color: var(--main-color);
     transition: all 0.3s linear;
 }
@@ -882,12 +889,19 @@
     margin-bottom: 0;
 }
 #detail .detail-ship { 
-    padding: 0 80px;
-}  
+    
+}   
+#detail .detail-describle__content pre{ 
+    font-family: 'Courier New', Courier, monospace; 
+    font-size: 16px; 
+
+}
 #detail .detail-comment__heading,
 #detail .detail-describle__heading {  
-    display: inline-block; 
-    padding-bottom: 12px;
+    display: inline-block;  
+    padding-top: 12px; 
+    margin-bottom: 16px;
+    padding-bottom: 2px;
     border-bottom: 2px solid var(--main-color);
 } 
 #detail .deatail-comment__btn{ 

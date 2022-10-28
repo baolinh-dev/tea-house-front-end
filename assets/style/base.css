@@ -372,7 +372,10 @@
 #detail  .owl-carousel,
 #home .owl-carousel { 
     position: relative;
-}    
+}     
+#detail .img-product__tiny-wrap .owl-carousel { 
+    margin-top: 20px !important;
+}
 #detail .owl-theme .owl-nav [class*="owl-"]:hover,  
 #home .owl-theme .owl-nav [class*="owl-"]:hover, 
 #menu .owl-theme .owl-nav [class*="owl-"]:hover {
